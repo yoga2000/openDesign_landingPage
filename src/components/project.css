@@ -1,0 +1,36 @@
+.gradient-text {
+  background: linear-gradient(90deg, #372c70 -1.68%, #5441ad 100.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.clip-path-inset {
+  clip-path: inset(0 0 30px 0);
+}
+
+.gold-gradient {
+  background: linear-gradient(90deg, #f4ae3e 0%, #fff177 98.21%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hr-gradient {
+  height: 1px;
+  background: linear-gradient(90deg, #f4ae3e 0%, #fff177 98.21%);
+  border: none;
+}
+
+.hover-underline::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #372c70;
+  transition: width 0.3s ease-in-out;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
